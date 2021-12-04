@@ -32,8 +32,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public String validateStudent(StudentInfoDTO studentInfo) throws Exception {
-		log.info(password);
-		log.info(userName);
+
 		StudentInfoRequestDTO student = new StudentInfoRequestDTO();
 
 		student.setStudentNumber(studentInfo.getStudentNumber());

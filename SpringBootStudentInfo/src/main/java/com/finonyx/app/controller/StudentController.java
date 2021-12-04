@@ -24,8 +24,11 @@ public class StudentController {
 
 	@PostMapping("/val")
 
+	
 	public ResponseEntity<String> StudentInfo(@RequestBody StudentInfoDTO studentInfo) throws Exception {
 
+		
+		
 		try {
 			if (StringUtils.isEmpty(studentInfo.getStudentNumber())) {
 				throw new IllegalArgumentException("Empty student Number");
